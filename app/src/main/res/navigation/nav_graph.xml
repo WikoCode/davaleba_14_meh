@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/itemsFragment">
+
+    <fragment
+        android:id="@+id/itemsFragment"
+        android:name="com.example.davaleba_14.fragments.ItemsFragment"
+        android:label="fragment_items"
+        tools:layout="@layout/fragment_items">
+
+        <action
+            android:id="@+id/action_itemsFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.example.davaleba_14.fragments.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" />
+</navigation>
